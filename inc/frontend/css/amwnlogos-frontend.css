@@ -1,0 +1,11 @@
+/**
+ * All of the CSS for your public-facing functionality should be included in this file.
+ *
+ * The file is enqueued from inc/frontend/class-frontend.php.
+ */
+
+.amwnlogos-footer {
+  text-align: center;
+  padding: 2px;
+  font-size: 11px;
+}

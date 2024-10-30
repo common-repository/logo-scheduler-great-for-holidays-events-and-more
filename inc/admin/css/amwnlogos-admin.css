@@ -1,0 +1,91 @@
+/**
+ * All of the CSS for your admin-specific functionality should be included in this file.
+ *
+ * The file is enqueued from inc/admin/class-admin.php.
+ */
+
+.amwn-logo-settings .form-table {
+  margin-top: 10px;
+}
+
+.amwn-logo-settings .form-table tr:first-child {
+  cursor: pointer;
+}
+
+.amwn-logo-settings .form-table tr:first-child td,
+.amwn-logo-settings .form-table tr:first-child th {
+  background-color: #005980;
+  color: #fff;
+}
+
+.amwn-logo-settings .form-table.closed tr:first-child td:after {
+  content: "\f140";
+}
+
+.amwn-logo-settings .form-table.open tr:first-child td:after {
+  content: "\f142";
+}
+
+.amwn-logo-settings .form-table tr:first-child td:after {
+  display: inline-block;
+  font-family: "dashicons";
+  float: right;
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.amwn-logo-settings .form-table td,
+.amwn-logo-settings .form-table th {
+  padding-left: 20px;
+}
+
+.amwn-logo-settings .form-table th {
+  border-left: 1px solid #ccc;
+}
+
+.amwn-logo-settings .form-table td {
+  border-right: 1px solid #ccc;
+}
+
+.amwn-logo-settings .form-table tr:last-child td,
+.amwn-logo-settings .form-table tr:last-child th {
+  border-bottom: 1px solid #ccc;
+}
+
+.amwn-logo-settings .form-table.closed tr:not(:first-child) {
+  display: none;
+}
+
+/** Hide logo name fields **/
+.amwn-logo-settings .form-table.closed input[name="amwnlogos_name[]"],
+.amwn-logo-settings .form-table.closed input[name="amwnlogos_name[]"]+span {
+  display: none;
+}
+
+/** Logo close **/
+.amwn-logo-image,
+.amwn-logo-image-retina {
+  position: relative;
+  display: inline-block;
+}
+
+.amwn-logo-image .close,
+.amwn-logo-image-retina .close {
+  position: absolute;
+  display: none;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-size: 18px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+
+.amwn-logo-image:hover .close,
+.amwn-logo-image-retina:hover .close {
+  display: block;
+}
